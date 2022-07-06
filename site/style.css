@@ -1,0 +1,110 @@
+body {
+	margin: 0;
+}
+
+.mail_form {
+	position: relative;
+	width: 50%;
+	height: 730px;
+	border: 2px solid black;
+	font-family: 'Consolas';
+	border-radius: 7px;
+}
+
+#sender_settings {
+	margin-top: 20px;
+	display: inline-block;
+	width: 100%;
+	height: 150px;
+}
+
+#sender_pre p {
+	font-size: 20px;
+}
+
+.sender_wrap {
+	position: relative;
+	width: 100%;
+	display: inline-block;
+	border-bottom: 2px solid black;
+}
+
+.sender_in {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	padding-bottom: 15px;
+	margin-left: 10%;
+	display: inline-flex;
+}
+
+.sender_namep, .sender_passp {
+	margin-right: 20px;
+}
+
+#sender_name_input, #sender_pass_input {
+	width: 150px;
+	height: 25px;
+	margin-top: 15px;
+	margin-right: 50px;
+	border-radius: 5px;
+	border: 1px solid #0d0d0d52;
+}
+
+#sender_name {
+	margin-right: 40px;
+}
+
+#send_addresses {
+	position: relative;
+	width: 100%;
+	padding-bottom: 45px;
+	border-bottom: 2px solid black;
+}
+
+#addr_pre {
+	font-size: 20px;
+}
+
+.addrs_about {
+	font-size: 15px;
+	opacity: 0.6;
+}
+
+#adrrs_input {
+	font-size: 15px;
+	background: white;
+	border-radius: 5px;
+	border: 1px solid #0d0d0d52;
+}
+
+#send_text {
+	position: relative;
+	width: 100%;
+}
+
+#send_statsp i, #send_time i {
+	font-size: 16px;
+	opacity: 0.9;
+}
+
+#text_pre {
+	font-size: 20px;
+}
+
+#text_input {
+	font-size: 15px;
+	background: white;
+	border-radius: 5px;
+	border: 1px solid #0d0d0d52;
+}
+
+.form_stats {
+	display: inline-block;
+	padding-top: 15px;
+}
+
+.form_stats button {
+	height: 30px;
+	border-radius: 7px;
+}

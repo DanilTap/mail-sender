@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Mail sender</title>
+	<!--CSS-->
+	<link rel="stylesheet" href="./style.css">
+	<!--JS-->
+	<script src="https://cdn.socket.io/4.4.1/socket.io.min.js" integrity="sha384-fKnu0iswBIqkjxrhQCTZ7qlLHOFEgNkRmK2vaO/LbTZSXdJfAu6ewRBdwHPhBo/H" crossorigin="anonymous"></script>
+</head>
+<body>
+	<center>
+		<div class="mail_form">
+			<div id="sender_settings">
+				<div id="sender_pre"><p>Настройки отправителя</p></div>
+				<span class="sender_wrap">
+					<div class="sender_in">
+						<p class="sender_namep">Имя:</p>
+						<input type="text" id="sender_name_input">
+						<p class="sender_passp">Пароль:</p>
+						<input type="text" id="sender_pass_input">
+					</div>
+				</span>
+			</div>
+
+			<div id="send_addresses">
+				<div id="addr_pre"><p>Адреса получателей</p></div>
+				<p class="addrs_about">Указывайте адреса получателей через запятую</p>
+				<textarea id="adrrs_input" rows="2" cols="45" name="text"></textarea>
+			</div>
+
+			<div id="send_text">
+				<div id="text_pre"><p>Текст письма</p></div>
+				<textarea name="text" id="text_input" rows="8" cols="45"></textarea>
+			</div>
+
+			<center>
+				<div class="form_stats">
+					<button id="send_start" onclick="startSend()">Начать рассылку</button>
+					<button id="send_stop" onclick="stopSend()">Остановить рассылку</button>
+					<p id="send_statsp">Отправка: <i>не начата</i></p>
+					<p id="send_time">Время: <i>0:0:0</i></p>
+				</div>
+			</center>
+		</div>
+	</center>
+</body>
+
+<script src="./script.js"></script>
+</html>
